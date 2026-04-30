@@ -384,4 +384,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    if "--gui" in sys.argv:
+        from gui import run_gui
+        run_gui()
+    else:
+        main()
